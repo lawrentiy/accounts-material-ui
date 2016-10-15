@@ -1,4 +1,8 @@
 export const socialButtonsColors = {
+	default: {
+		background: '#000',
+		label: '#fff'
+	},
 	facebook: {
 		background: '#3b5998',
 		label: '#fff'
@@ -27,7 +31,7 @@ export const socialButtonsColors = {
 		background: '#faf6f1',
 		label: '#000'
 	}
-}
+};
 
 export const socialButtonIcons = {
 	google: "google-plus",

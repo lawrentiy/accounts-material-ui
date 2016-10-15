@@ -154,6 +154,7 @@ class SocialButtons extends Accounts.ui.SocialButtons {
 							return socialButtonIcons[matched];
 						});
 						const {label, type, onClick, disabled} = oauthServices[id];
+						const colors = socialButtonsColors[id] || socialButtonsColors['default'] || {};
 						return (
 							<RaisedButton
 								key={i}
@@ -167,8 +168,8 @@ class SocialButtons extends Accounts.ui.SocialButtons {
 								icon={serviceClass.length > 0
 								? <FontIcon className={`fa fa-${serviceClass}`}/>
 								: ''}
-								backgroundColor={socialButtonsColors[id].background}
-								labelColor={socialButtonsColors[id].label}
+								backgroundColor={colors.background}
+								labelColor={colors.label}
 								style={{marginRight: '5px'}}
 								/>
 						);
